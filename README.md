@@ -4,7 +4,7 @@
 
 1234 Vector Icons for React Native
 
-<img src="./static/adyen.png" alt="adyen" width="150" height="150"> <img src="./static/aerospike-icon.png" alt="aerospike-icon" width="150" height="150"> <img src="./static/aerospike.png" alt="aerospike" width="150" height="150">
+<img src="./static/microcosm.png" alt="microcosm" width="150" height="150"> <img src="./static/postman-icon.png" alt="postman-icon" width="150" height="150"> <img src="./static/google-ads.png" alt="google-ads" width="150" height="150">
 
 ## List of icons
 
@@ -20,14 +20,14 @@ import Icon from 'react-native-ico-logos';
 render() {
     return (
         <>
-          <Icon name="adyen" />
-          <Icon name="aerospike-icon" height="40" width="40" />
-          <Icon name="aerospike" color="red" />
-          <Icon name="aerospike" colors={{ "#000000": "#FFFFFF" }} />
-          <Icon name="aerospike-icon" badge="10" />
-          <Icon name="aerospike-icon" badge={{value: 'A', fontSize: 25, radius: 22, position:'top_left', color:'orange', backgroundColor:'blue'}}/>
-          <Icon name="adyen" background="circle" />
-          <Icon name="adyen" background={{ type: "button", color: 'green' }} />
+          <Icon name="microcosm" />
+          <Icon name="postman-icon" height="40" width="40" />
+          <Icon name="google-ads" color="red" />
+          <Icon name="google-ads" colors={{ "#000000": "#FFFFFF" }} />
+          <Icon name="postman-icon" badge="10" />
+          <Icon name="postman-icon" badge={{value: 'A', fontSize: 25, radius: 22, position:'top_left', color:'orange', backgroundColor:'blue'}}/>
+          <Icon name="microcosm" background="circle" />
+          <Icon name="microcosm" background={{ type: "button", color: 'green' }} />
         </>
     );
 }
@@ -54,7 +54,9 @@ npm install --save react-native-ico-logos react-native-svg
 react-native link react-native-svg
 ```
 
-### pod install ( for iOS )
+`react-native-svg` is a peer dependency. Install a current version in the app so the package uses the app-level native module instead of pulling in an older nested copy.
+
+### pod install (for iOS)
 
 ```
 cd ios && pod install && cd ..
@@ -68,9 +70,9 @@ Returns a SvgXml icon by name and group.
 
  name | optional | default value | description | examples
 ------|----------|---------------|-------------|---------
-name | no |  | name of icon | "adyen"
+name | no |  | name of icon | "microcosm"
 color | yes | | line color, css style | "#00ff00", "#0f0", "green"
-colors | yes | | replace colors | {"#FFFFFF": "#000000"} // white to black
+colors | yes | | replace colors | {"#FFFFFF": "#000000", "#f00": "#00f"} // white to black, red to blue
 width | yes | 20 | width of the icon | 40
 height | yes | 20 | height of the icon | 40
 background | yes | | background type | "circle"
